@@ -3,7 +3,7 @@ package com.app.richetrobot;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class RicochetController {
     @FXML
     private Label welcomeText;
 
