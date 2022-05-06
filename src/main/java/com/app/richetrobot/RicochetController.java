@@ -2,13 +2,16 @@ package com.app.richetrobot;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.layout.GridPane;
 
 public class RicochetController {
     @FXML
-    private Label welcomeText;
+    private GridPane board;
 
-    @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    public GridPane getBoard() {
+        return board;
     }
+
+
+
 }
