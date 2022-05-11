@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.shape.Rectangle?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.richetrobot.RicochetController">
    <children>
       <GridPane fx:id="board" gridLinesVisible="true" layoutX="100.0" layoutY="50.0" prefHeight="600.0" prefWidth="600.0">
          <columnConstraints>
@@ -35,8 +34,8 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="37.800006103515614" minHeight="2.5999816894531307" prefHeight="32.19999999999999" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="60.20001831054688" minHeight="10.0" prefHeight="32.80000000000001" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -48,7 +47,7 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="37.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Rectangle fx:id="bluerect" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="37.0" onDragDetected="#dragStartEvent" onMouseClicked="#clickRectEvent" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
          </children>
       </GridPane>
    </children>
