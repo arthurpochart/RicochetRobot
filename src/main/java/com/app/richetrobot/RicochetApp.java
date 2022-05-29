@@ -14,27 +14,34 @@ import java.io.IOException;
 
 public class RicochetApp extends Application {
 
-    RicochetController controller;
-    GameLogic game = new GameLogic();
+        private Board plateau;
+
 
     @Override
     public void start(Stage stage) throws IOException {
+
         FXMLLoader loader = new FXMLLoader(RicochetApp.class.getResource("small-prototype.fxml"));
-        Scene scene = new Scene(loader.load(), 1200, 900);
+        Scene prototypeScene = new Scene(loader.load(), 1200, 900);
         /*AnchorPane root = new AnchorPane();
         Scene gameScene = new Scene(root,1200,900);*/
-        controller = loader.getController();
-        stage.setTitle("Ricochet Robot");
-        stage.setScene(scene);
+        stage.setScene(prototypeScene);
+        stage.setTitle("RicochetRobot");
+
+        AnchorPane root = (AnchorPane) prototypeScene.getRoot();
+
+        plateau = (Board) root.getChildren().get(1);
+
         stage.show();
-        //game.initialise(controller.grid.getChildren());
+
+
+
+
     }
 
 
 
     public static void main(String[] args) {
         launch();
-        RicochetApp myApp = new RicochetApp();
 
     }
 }
