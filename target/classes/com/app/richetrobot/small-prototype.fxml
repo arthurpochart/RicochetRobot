@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.richetrobot.RicochetController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#111922" height="929.0" layoutX="-69.0" layoutY="-21.0" stroke="BLACK" strokeType="INSIDE" width="1286.0" />
+      <GridPane fx:id="grid" gridLinesVisible="true" layoutX="309.0" layoutY="154.0" prefHeight="600.0" prefWidth="600.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" rotate="-90.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="48.0" layoutY="-47.0" rotate="90.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="95.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="48.0" layoutY="-47.0" rotate="90.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="95.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" rotate="-90.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="48.0" layoutY="-47.0" rotate="90.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="95.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" rotate="-90.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="95.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" rotate="90.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="95.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="5">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="48.0" layoutY="-47.0" rotate="90.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="95.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" rotate="180.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="95.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" rotate="90.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="95.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="48.0" layoutY="-47.0" rotate="90.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="95.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="95.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" rotate="180.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="95.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" rotate="-90.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="48.0" layoutY="-47.0" rotate="90.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="95.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="95.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="3">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" rotate="180.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="95.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+                  <ImageView fx:id="robotImage" fitHeight="95.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="https://cdn-icons-png.flaticon.com/512/5010/5010338.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="3">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" rotate="90.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="48.0" layoutY="-47.0" rotate="90.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="95.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="4">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" rotate="180.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="95.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="4">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="4">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="48.0" layoutY="-47.0" rotate="90.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="95.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="5">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" rotate="180.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="48.0" layoutY="-47.0" rotate="90.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="95.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" rotate="90.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="95.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" rotate="90.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="48.0" layoutY="-47.0" rotate="90.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="95.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" rotate="180.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="48.0" layoutY="-47.0" rotate="90.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="95.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="5">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" rotate="90.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="95.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="5">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#96a8b9" height="100.0" stroke="#dd0606" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" rotate="90.0">
+                     <children>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="48.0" layoutY="-47.0" rotate="90.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#0b2875" height="100.0" layoutX="95.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
