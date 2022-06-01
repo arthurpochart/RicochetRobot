@@ -1,6 +1,10 @@
 package com.app.richetrobot;
 
-public class Case {
+import javafx.scene.layout.StackPane;
+
+public class Case extends StackPane {
+
+    
     private enum Wall{
         NORTH,EAST,WEST,SOUTH
     }
