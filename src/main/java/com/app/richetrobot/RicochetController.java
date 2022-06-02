@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
@@ -23,8 +24,7 @@ import static javafx.scene.paint.Color.GRAY;
 
 public class RicochetController implements Initializable {
 
-    @FXML
-    ImageView robob;
+
     @FXML
     GridPane grid;
     @FXML
@@ -38,33 +38,50 @@ public class RicochetController implements Initializable {
     @FXML
     ImageView rightArrow;
 
-    Robot mainRobot = new Robot(robob, 2,3);
+    Robot mainRobot;
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        addRobot();
+        System.out.println("Controller Initialized");
+    }
 
     public RicochetController(){
 
     }
 
-
+    private void addRobot(){
+        mainRobot = new Robot(new ImageView(new Image("robot.png")),3,2);
+        grid.add(mainRobot.getImage(),mainRobot.getX(),mainRobot.getY());
+    }
 
     @FXML
     private void clickUp(MouseEvent event) {
         System.out.println("Up Clicked");
-       /* System.out.println("Z pressed");
-        StackPane destNode = (StackPane) getNodeFromGridPane(grid,mainRobot.getX(),mainRobot.getY()+1);
-        destNode.getChildren().add(robob);*/
+        Node destNode = getNodeFromGridPane(grid,mainRobot.getX(),mainRobot.getY()-1);
+        mainRobot.setPosition(mainRobot.getX(),mainRobot.getY()-1);
+        GridPane.setConstraints(mainRobot.getImage(),mainRobot.getX(),mainRobot.getY());
+
     }
     @FXML
     private void clickDown(MouseEvent event) {
+        Node destNode = getNodeFromGridPane(grid,mainRobot.getX(),mainRobot.getY()+1);
+        mainRobot.setPosition(mainRobot.getX(),mainRobot.getY()+1);
+        GridPane.setConstraints(mainRobot.getImage(),mainRobot.getX(),mainRobot.getY());
         System.out.println("Down Clicked");
     }
     @FXML
     private void clickLeft(MouseEvent event) {
+        Node destNode = getNodeFromGridPane(grid,mainRobot.getX()-1,mainRobot.getY());
+        mainRobot.setPosition(mainRobot.getX()-1,mainRobot.getY());
+        GridPane.setConstraints(mainRobot.getImage(),mainRobot.getX(),mainRobot.getY());
         System.out.println("Left Clicked");
     }
     @FXML
     private void clickRight(MouseEvent event) {
+        Node destNode = getNodeFromGridPane(grid,mainRobot.getX()+1,mainRobot.getY());
+        mainRobot.setPosition(mainRobot.getX()+1,mainRobot.getY());
+        GridPane.setConstraints(mainRobot.getImage(),mainRobot.getX(),mainRobot.getY());
         System.out.println("Right Clicked");
-
     }
 
     // Method for finding rectangle in gridpane:
@@ -82,8 +99,5 @@ public class RicochetController implements Initializable {
 
     }
 
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        System.out.println("Controller Initialized");
-    }
+
 }

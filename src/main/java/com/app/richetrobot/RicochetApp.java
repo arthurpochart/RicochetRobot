@@ -17,9 +17,6 @@ import java.io.IOException;
 
 public class RicochetApp extends Application {
 
-        private GridPane plateau;
-
-
     @Override
     public void start(Stage stage) throws IOException {
 
@@ -30,20 +27,9 @@ public class RicochetApp extends Application {
         Scene gameScene = new Scene(root,1200,900);*/
         stage.setScene(prototypeScene);
         stage.setTitle("RicochetRobot");
-
-
-
-
-        plateau = (GridPane) root.getChildren().get(1);
-
         stage.show();
 
-
-
-
     }
-
-
 
     public static void main(String[] args) {
         launch();
