@@ -10,8 +10,8 @@ public class Game {
     public static Game context;
     public static int SIZE = 6;
     public static Case[][] board;
-    private final HashMap<Color, Token> robots;
-    private Token target;
+    public static HashMap<Color, Token> robots;
+    public static Token target;
     Token selectedRobot;
     private Game.Status status;
     public StringProperty statusToolTipProperty = new SimpleStringProperty();
@@ -43,9 +43,80 @@ public class Game {
         int randomColorIndex = (new Random()).nextInt(colors.length);
         this.target = new Token(colors[randomColorIndex]);
     }
+    
+    public Token getTarget(){
+        return this.target;
+    }
 
     public HashMap<Color, Token> getRobots() {
         return this.robots;
+    }
+
+    public int[] getDestination(Game.Direction direction){
+        int startX = selectedRobot.getX();
+        int startY = selectedRobot.getY();
+
+
+        if(direction == Direction.UP){
+            for(int i=startY-1;i>=0;i--){
+                //if next tile has a north wall return its position
+                if(board[startX][i].containsTarget() && Game.context.selectedRobot.getColor()==Game.target.getColor()){
+                    System.out.println("You win!");
+                    return new int[] {startX,i};
+                }
+                if(board[startX][i].containsRobot()){
+                    return new int[] {startX,i+1};
+                }
+                if(board[startX][i].NORTH){
+                    return new int[] {startX,i};
+                }
+            }
+        }
+        else if(direction == Direction.DOWN){
+            for(int i=startY+1;i<6;i++){
+                if(board[startX][i].containsTarget()&& Game.context.selectedRobot.getColor()==Game.target.getColor()){
+                    System.out.println("You win!");
+                    return new int[] {startX,i};
+                }
+                if(board[startX][i].containsRobot()){
+                    return new int[] {startX,i-1};
+                }
+                //if next tile has a north wall return its position
+                if(board[startX][i].SOUTH){
+                    return new int[] {startX,i};
+                }
+            }
+        }
+        else if(direction == Direction.LEFT){
+            for(int i=startX-1;i>=0;i--){
+                if(board[i][startY].containsTarget()&& Game.context.selectedRobot.getColor()==Game.target.getColor()){
+                    System.out.println("You win!");
+                    return new int[] {i,startY};
+                }
+                if(board[i][startY].containsRobot()){
+                    return new int[] {i+1,startY};
+                }
+                //if next tile has a north wall return its position
+                if(board[i][startY].WEST){
+                    return new int[] {i,startY};
+                }
+            }
+        }
+        else if (direction == Direction.RIGHT){
+            for(int i=startX+1;i<6;i++){
+                if(board[i][startY].containsTarget()&& Game.context.selectedRobot.getColor()==Game.target.getColor()){
+                    return new int[] {i,startY};
+                }
+                if(board[i][startY].containsRobot()){
+                    return new int[] {i-1,startY};
+                }
+                //if next tile has a north wall return its position
+                if(board[i][startY].EAST){
+                    return new int[] {i,startY};
+                }
+            }
+        }
+        return new int[] {0,0};
     }
 
     public void processSelectRobot(Color color) {
@@ -54,6 +125,7 @@ public class Game {
         }
 
     }
+    public enum Direction{LEFT,RIGHT,UP,DOWN}
     public enum Status {
         CHOOSE_PLAYER("Cliquez sur le bouton [Jouer]"),
         CHOOSE_ROBOT("Cliquez sur le robot à déplacer"),

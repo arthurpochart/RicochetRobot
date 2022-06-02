@@ -31,11 +31,26 @@ public class RicochetController implements Initializable {
     Token mainRobot;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
+        for(Node node: grid.getChildren()){
+            Case newCase = new Case(node);
+            Game.board[newCase.getX()][newCase.getY()] = newCase;
+        }
+
         //Game.setSIZE((int) Math.sqrt(grid.getChildren().size()-2));
         addRobot(Token.Color.BLUE);
         addRobot(Token.Color.GREEN);
         addRobot(Token.Color.RED);
         addRobot(Token.Color.YELLOW);
+
+        grid.add(
+                new ImageView( new Image(
+                        Game.context.getTarget().getColor() + "_target.png",
+                        100, 100, false, true
+                ) ),
+                Game.context.getTarget().getX(),
+                Game.context.getTarget().getY()
+        );
         System.out.println("Controller Initialized");
     }
 
@@ -61,30 +76,41 @@ public class RicochetController implements Initializable {
     private void clickUp(MouseEvent event) {
 
         System.out.println("Up Clicked");
-        //Node destNode = getNodeFromGridPane(grid,mainRobot.getX(),mainRobot.getY()-1);
         Token robottoMove = Game.context.selectedRobot;
-        robottoMove.setPosition(robottoMove.getX(),robottoMove.getY()-1);
+
+        int[] destination = Game.context.getDestination(Game.Direction.UP);
+        robottoMove.setPosition(destination[0],destination[1]);
+
         GridPane.setConstraints(robottoMove.getImage(),robottoMove.getX(),robottoMove.getY());
 
     }
     @FXML
     private void clickDown(MouseEvent event) {
         Token robottoMove = Game.context.selectedRobot;
-        robottoMove.setPosition(robottoMove.getX(),robottoMove.getY()+1);
+
+        int[] destination = Game.context.getDestination(Game.Direction.DOWN);
+        robottoMove.setPosition(destination[0],destination[1]);
+
         GridPane.setConstraints(robottoMove.getImage(),robottoMove.getX(),robottoMove.getY());
         System.out.println("Down Clicked");
     }
     @FXML
     private void clickLeft(MouseEvent event) {
         Token robottoMove = Game.context.selectedRobot;
-        robottoMove.setPosition(robottoMove.getX()-1,robottoMove.getY());
+
+        int[] destination = Game.context.getDestination(Game.Direction.LEFT);
+        robottoMove.setPosition(destination[0],destination[1]);
+
         GridPane.setConstraints(robottoMove.getImage(),robottoMove.getX(),robottoMove.getY());
         System.out.println("Left Clicked");
     }
     @FXML
     private void clickRight(MouseEvent event) {
         Token robottoMove = Game.context.selectedRobot;
-        robottoMove.setPosition(robottoMove.getX()+1,robottoMove.getY());
+
+        int[] destination = Game.context.getDestination(Game.Direction.RIGHT);
+        robottoMove.setPosition(destination[0],destination[1]);
+
         GridPane.setConstraints(robottoMove.getImage(),robottoMove.getX(),robottoMove.getY());
         System.out.println("Right Clicked");
     }

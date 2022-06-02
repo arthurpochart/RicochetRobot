@@ -29,102 +29,102 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" styleClass="top-left">
                <image>
                   <Image url="@../../../caseCoin.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" styleClass="top-right" GridPane.columnIndex="1" GridPane.rowIndex="0">
                <image>
                   <Image url="@../../../caseCoin.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="0">
+            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" styleClass="top-left" GridPane.columnIndex="2" GridPane.rowIndex="0">
                <image>
                   <Image url="@../../../caseCoin.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" GridPane.columnIndex="3" GridPane.rowIndex="0">
+            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" styleClass="top" GridPane.columnIndex="3" GridPane.rowIndex="0">
                <image>
                   <Image url="@../../../caseCote.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" GridPane.columnIndex="4" GridPane.rowIndex="0">
+            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" styleClass="top-bottom" GridPane.columnIndex="4" GridPane.rowIndex="0">
                <image>
                   <Image url="@../../../casePara.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" GridPane.columnIndex="5" GridPane.rowIndex="0">
+            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" styleClass="top-right" GridPane.columnIndex="5" GridPane.rowIndex="0">
                <image>
                   <Image url="@../../../caseCoin.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" GridPane.columnIndex="0">
+            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" styleClass="left" GridPane.columnIndex="0" GridPane.rowIndex="1">
                <image>
                   <Image url="@../../../caseCote.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2" GridPane.columnIndex="0">
+            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" styleClass="left-right" GridPane.columnIndex="0" GridPane.rowIndex="2">
                <image>
                   <Image url="@../../../casePara.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3" GridPane.columnIndex="0">
+            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" styleClass="left" GridPane.columnIndex="0" GridPane.rowIndex="3">
                <image>
                   <Image url="@../../../caseCote.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4" GridPane.columnIndex="0">
+            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" styleClass="left" GridPane.columnIndex="0" GridPane.rowIndex="4">
                <image>
                   <Image url="@../../../caseCote.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" GridPane.rowIndex="5" GridPane.columnIndex="0">
+            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" styleClass="bottom-left" GridPane.columnIndex="0" GridPane.rowIndex="5">
                <image>
                   <Image url="@../../../caseCoin.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" styleClass="bottom" GridPane.columnIndex="1" GridPane.rowIndex="5">
                <image>
                   <Image url="@../../../caseCote.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" GridPane.columnIndex="4" GridPane.rowIndex="5">
+            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" styleClass="bottom" GridPane.columnIndex="4" GridPane.rowIndex="5">
                <image>
                   <Image url="@../../../caseCote.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
+            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" styleClass="bottom-left" GridPane.columnIndex="3" GridPane.rowIndex="5">
                <image>
                   <Image url="@../../../caseCoin.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" styleClass="bottom-right" GridPane.columnIndex="2" GridPane.rowIndex="5">
                <image>
                   <Image url="@../../../caseCoin.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" GridPane.columnIndex="5" GridPane.rowIndex="5">
+            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" styleClass="bottom-right" GridPane.columnIndex="5" GridPane.rowIndex="5">
                <image>
                   <Image url="@../../../caseCoin.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
+            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" styleClass="right" GridPane.columnIndex="5" GridPane.rowIndex="2">
                <image>
                   <Image url="@../../../caseCote.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" styleClass="top-left" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <image>
                   <Image url="@../../../caseCoin.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" styleClass="bottom" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <image>
                   <Image url="@../../../caseCote.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" styleClass="none" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <image>
                   <Image url="@../../../caseVide.png" />
                </image>
@@ -174,7 +174,7 @@
                   <Image url="@../../../caseVide.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" GridPane.columnIndex="5" GridPane.rowIndex="3">
+            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" styleClass="bottom-right" GridPane.columnIndex="5" GridPane.rowIndex="3">
                <image>
                   <Image url="@../../../caseCoin.png" />
                </image>
@@ -189,22 +189,22 @@
                   <Image url="@../../../caseVide.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" GridPane.columnIndex="5" GridPane.rowIndex="4">
+            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" styleClass="top-right" GridPane.columnIndex="5" GridPane.rowIndex="4">
                <image>
                   <Image url="@../../../caseCoin.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" styleClass="top-right" GridPane.columnIndex="4" GridPane.rowIndex="1">
                <image>
                   <Image url="@../../../caseCoin.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="1">
+            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" styleClass="left-right" GridPane.columnIndex="5" GridPane.rowIndex="1">
                <image>
                   <Image url="@../../../casePara.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <ImageView fitHeight="125.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" styleClass="none" GridPane.columnIndex="3" GridPane.rowIndex="1">
                <image>
                   <Image url="@../../../caseVide.png" />
                </image>
