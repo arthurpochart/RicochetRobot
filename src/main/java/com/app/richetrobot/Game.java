@@ -69,6 +69,7 @@ public class Game {
                 }
                 if(board[startX][i].NORTH){
                     return new int[] {startX,i};
+
                 }
             }
         }
