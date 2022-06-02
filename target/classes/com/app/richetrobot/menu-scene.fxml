@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image:url('fondEcranMenu');" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <StackPane layoutX="-2.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="403.0" fitWidth="753.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../fondEcranMenu.png" />
+               </image>
+            </ImageView>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="200.0" layoutY="37.0" text="Robot Ricochet" textFill="#778f8d">
+                     <font>
+                        <Font name="Calibri Bold Italic" size="42.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="453.0" layoutY="263.0" mnemonicParsing="false" style="-fx-background-color: LightBlue;" text="2">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button layoutX="409.0" layoutY="263.0" mnemonicParsing="false" style="-fx-background-color: LightGoldenRodYellow;" text="1">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button defaultButton="true" layoutX="378.0" layoutY="320.0" mnemonicParsing="false" text="Play" textAlignment="CENTER">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button layoutX="541.0" layoutY="263.0" mnemonicParsing="false" style="-fx-background-color: LightGreen;" text="4">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button layoutX="498.0" layoutY="263.0" mnemonicParsing="false" style="-fx-background-color: LightCoral;" text="3">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Label layoutX="264.0" layoutY="266.0" text="Nombre de Joueurs  :">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
