@@ -105,6 +105,6 @@ public class Case {
     int size = 64;
 
     private Robot robot;
-    private Position position;
+
 
 }

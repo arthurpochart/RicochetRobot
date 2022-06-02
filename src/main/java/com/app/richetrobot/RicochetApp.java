@@ -20,7 +20,7 @@ public class RicochetApp extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         Game.start();
-        FXMLLoader loader = new FXMLLoader(RicochetApp.class.getResource("small-prototype.fxml"));
+        FXMLLoader loader = new FXMLLoader(RicochetApp.class.getResource("main-scene.fxml"));
         AnchorPane root = loader.load();
         Scene prototypeScene = new Scene(root, 1200, 900);
         /*AnchorPane root = new AnchorPane();

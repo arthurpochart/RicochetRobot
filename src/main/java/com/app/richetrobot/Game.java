@@ -8,7 +8,7 @@ import javafx.beans.property.StringProperty;
 
 public class Game {
     public static Game context;
-    public static int SIZE = 6;
+    public static int SIZE = 16;
     public static Case[][] board;
     public static HashMap<Color, Token> robots;
     public static Token target;
@@ -74,7 +74,7 @@ public class Game {
             }
         }
         else if(direction == Direction.DOWN){
-            for(int i=startY+1;i<6;i++){
+            for(int i=startY+1;i<16;i++){
                 if(board[startX][i].containsTarget()&& Game.context.selectedRobot.getColor()==Game.target.getColor()){
                     System.out.println("You win!");
                     return new int[] {startX,i};
@@ -104,7 +104,7 @@ public class Game {
             }
         }
         else if (direction == Direction.RIGHT){
-            for(int i=startX+1;i<6;i++){
+            for(int i=startX+1;i<16;i++){
                 if(board[i][startY].containsTarget()&& Game.context.selectedRobot.getColor()==Game.target.getColor()){
                     return new int[] {i,startY};
                 }
