@@ -1,26 +1,16 @@
 package com.app.richetrobot;
 
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
-import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.StackPane;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Rectangle;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-
-import static javafx.scene.paint.Color.BLACK;
-import static javafx.scene.paint.Color.GRAY;
 
 public class RicochetController implements Initializable {
 
@@ -38,10 +28,14 @@ public class RicochetController implements Initializable {
     @FXML
     ImageView rightArrow;
 
-    Robot mainRobot;
+    Token mainRobot;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        addRobot();
+        //Game.setSIZE((int) Math.sqrt(grid.getChildren().size()-2));
+        addRobot(Token.Color.BLUE);
+        addRobot(Token.Color.GREEN);
+        addRobot(Token.Color.RED);
+        addRobot(Token.Color.YELLOW);
         System.out.println("Controller Initialized");
     }
 
@@ -49,38 +43,49 @@ public class RicochetController implements Initializable {
 
     }
 
-    private void addRobot(){
-        mainRobot = new Robot(new ImageView(new Image("robot.png")),3,2);
-        grid.add(mainRobot.getImage(),mainRobot.getX(),mainRobot.getY());
+    private void addRobot(Token.Color color){
+        Token robot = Game.context.getRobots().get(color);
+        ImageView robotGui = new ImageView( new Image(
+                color.name() + "_robot.png",
+                90, 90, false, true
+        ) );
+        robotGui.setOnMouseClicked
+                (event -> Game.context.processSelectRobot(color));
+        grid.add(robotGui, robot.getX(), robot.getY());
+        // Association de l' "ImageView" avec le robot stocké dans le jeu
+        robot.setImage(robotGui);
+        //mainRobot = new Token(new ImageView(new Image("robot.png")), Token.Color.BLUE,3,2);
     }
 
     @FXML
     private void clickUp(MouseEvent event) {
+
         System.out.println("Up Clicked");
-        Node destNode = getNodeFromGridPane(grid,mainRobot.getX(),mainRobot.getY()-1);
-        mainRobot.setPosition(mainRobot.getX(),mainRobot.getY()-1);
-        GridPane.setConstraints(mainRobot.getImage(),mainRobot.getX(),mainRobot.getY());
+        //Node destNode = getNodeFromGridPane(grid,mainRobot.getX(),mainRobot.getY()-1);
+        Token robottoMove = Game.context.selectedRobot;
+        robottoMove.setPosition(robottoMove.getX(),robottoMove.getY()-1);
+        GridPane.setConstraints(robottoMove.getImage(),robottoMove.getX(),robottoMove.getY());
 
     }
     @FXML
     private void clickDown(MouseEvent event) {
-        Node destNode = getNodeFromGridPane(grid,mainRobot.getX(),mainRobot.getY()+1);
-        mainRobot.setPosition(mainRobot.getX(),mainRobot.getY()+1);
-        GridPane.setConstraints(mainRobot.getImage(),mainRobot.getX(),mainRobot.getY());
+        Token robottoMove = Game.context.selectedRobot;
+        robottoMove.setPosition(robottoMove.getX(),robottoMove.getY()+1);
+        GridPane.setConstraints(robottoMove.getImage(),robottoMove.getX(),robottoMove.getY());
         System.out.println("Down Clicked");
     }
     @FXML
     private void clickLeft(MouseEvent event) {
-        Node destNode = getNodeFromGridPane(grid,mainRobot.getX()-1,mainRobot.getY());
-        mainRobot.setPosition(mainRobot.getX()-1,mainRobot.getY());
-        GridPane.setConstraints(mainRobot.getImage(),mainRobot.getX(),mainRobot.getY());
+        Token robottoMove = Game.context.selectedRobot;
+        robottoMove.setPosition(robottoMove.getX()-1,robottoMove.getY());
+        GridPane.setConstraints(robottoMove.getImage(),robottoMove.getX(),robottoMove.getY());
         System.out.println("Left Clicked");
     }
     @FXML
     private void clickRight(MouseEvent event) {
-        Node destNode = getNodeFromGridPane(grid,mainRobot.getX()+1,mainRobot.getY());
-        mainRobot.setPosition(mainRobot.getX()+1,mainRobot.getY());
-        GridPane.setConstraints(mainRobot.getImage(),mainRobot.getX(),mainRobot.getY());
+        Token robottoMove = Game.context.selectedRobot;
+        robottoMove.setPosition(robottoMove.getX()+1,robottoMove.getY());
+        GridPane.setConstraints(robottoMove.getImage(),robottoMove.getX(),robottoMove.getY());
         System.out.println("Right Clicked");
     }
 
