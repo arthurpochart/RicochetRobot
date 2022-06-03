@@ -16,7 +16,11 @@ public class Game {
     private Game.Status status;
     public StringProperty statusToolTipProperty = new SimpleStringProperty();
     public StringProperty playerNameProperty = new SimpleStringProperty();
+    private int players;
 
+    public void setPlayers(int number){
+        players = number;
+    }
     public static void setSIZE(int size) {
         SIZE = size;
     }

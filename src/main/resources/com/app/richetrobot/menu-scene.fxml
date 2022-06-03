@@ -32,14 +32,6 @@
                         <DropShadow />
                      </effect>
                   </Button>
-                  <Button defaultButton="true" layoutX="378.0" layoutY="320.0" mnemonicParsing="false" text="Play" textAlignment="CENTER">
-                     <font>
-                        <Font size="17.0" />
-                     </font>
-                     <effect>
-                        <DropShadow />
-                     </effect>
-                  </Button>
                   <Button layoutX="541.0" layoutY="263.0" mnemonicParsing="false" style="-fx-background-color: LightGreen;" text="4">
                      <effect>
                         <DropShadow />

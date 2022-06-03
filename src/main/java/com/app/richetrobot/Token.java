@@ -6,8 +6,8 @@ import javafx.scene.image.ImageView;
 
 public class Token {
     private Node image;
-    private int x = (new Random()).nextInt(5);
-    private int y = (new Random()).nextInt(5);
+    private int x = (new Random()).nextInt(16);
+    private int y = (new Random()).nextInt(16);
     private Color color;
 
     public Color getColor() { return this.color; }

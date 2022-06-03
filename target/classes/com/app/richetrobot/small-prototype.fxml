@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
 
-<AnchorPane fx:id="scene" prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.richetrobot.RicochetController">
+<AnchorPane fx:id="scene" prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.richetrobot.RicochetController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#111922" height="929.0" layoutX="-69.0" layoutY="-21.0" stroke="BLACK" strokeType="INSIDE" width="1286.0" />
       <GridPane fx:id="grid" gridLinesVisible="true" layoutX="309.0" layoutY="154.0" onKeyPressed="#clickUp" prefHeight="600.0" prefWidth="600.0">

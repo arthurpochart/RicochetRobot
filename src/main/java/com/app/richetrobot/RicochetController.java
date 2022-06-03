@@ -46,7 +46,7 @@ public class RicochetController implements Initializable {
         grid.add(
                 new ImageView( new Image(
                         Game.context.getTarget().getColor() + "_target.png",
-                        100, 100, false, true
+                        30, 30, false, true
                 ) ),
                 Game.context.getTarget().getX(),
                 Game.context.getTarget().getY()
@@ -62,7 +62,7 @@ public class RicochetController implements Initializable {
         Token robot = Game.context.getRobots().get(color);
         ImageView robotGui = new ImageView( new Image(
                 color.name() + "_robot.png",
-                90, 90, false, true
+                30, 30, false, true
         ) );
         robotGui.setOnMouseClicked
                 (event -> Game.context.processSelectRobot(color));
