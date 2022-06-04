@@ -20,7 +20,7 @@ public class AudioPlayer {
     String status;
 
     AudioInputStream audioInputStream;
-    static String filePath = "C:\\Users\\jules\\IdeaProjects\\Rectangle\\RicochetRobot\\src\\main\\resources\\Dovakin.wav";
+    static String filePath = "src/main/resources/Dovakin.wav";
 
     // constructor to initialize streams and clip
     public AudioPlayer()
