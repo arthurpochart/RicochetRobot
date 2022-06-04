@@ -15,6 +15,8 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
 import java.io.File;
 
 import java.io.IOException;
@@ -23,9 +25,10 @@ public class RicochetApp extends Application {
     private Stage generalstage;
 
     @Override
-    public void start(Stage stage) throws IOException {
+    public void start(Stage stage) throws IOException, UnsupportedAudioFileException, LineUnavailableException {
+        new AudioPlayer().play();
         generalstage = stage;
-
+        //For example
         Game.start();
 
         /*AnchorPane root = new AnchorPane();

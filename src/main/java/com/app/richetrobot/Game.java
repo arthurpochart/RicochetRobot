@@ -155,4 +155,6 @@ public class Game {
         statusMessage.append(status.getToolTip());
         this.statusToolTipProperty.set(statusMessage.toString());
     }
+
 }
+
