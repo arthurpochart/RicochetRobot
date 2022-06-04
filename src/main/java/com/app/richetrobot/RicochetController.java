@@ -1,8 +1,11 @@
 package com.app.richetrobot;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -127,6 +130,21 @@ public class RicochetController implements Initializable {
     }
 
     public void clickRectEvent(MouseEvent mouseEvent) {
+
+    }
+    @FXML
+    private TextField Score1;
+    public void afficheScore1(ActionEvent event){
+
+    }
+    @FXML
+    private TextField Score2;
+    public void afficheScore2(ActionEvent event){
+
+    }
+    @FXML
+    private TextField temps;
+    public void afficheTemps(ActionEvent event){
 
     }
 

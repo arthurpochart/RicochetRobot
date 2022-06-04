@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image:url('fondEcranMenu');" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image:url('fondEcranMenu');" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.richetrobot.MenuController">
    <children>
       <StackPane layoutX="-2.0" prefHeight="400.0" prefWidth="600.0">
          <children>
@@ -22,7 +22,7 @@
                         <Font name="Calibri Bold Italic" size="42.0" />
                      </font>
                   </Label>
-                  <Button layoutX="453.0" layoutY="263.0" mnemonicParsing="false" style="-fx-background-color: LightBlue;" text="2">
+                  <Button fx:id="deuxJoueurs" layoutX="453.0" layoutY="263.0" mnemonicParsing="false" style="-fx-background-color: LightBlue;" text="2">
                      <effect>
                         <DropShadow />
                      </effect>
@@ -32,12 +32,12 @@
                         <DropShadow />
                      </effect>
                   </Button>
-                  <Button layoutX="541.0" layoutY="263.0" mnemonicParsing="false" style="-fx-background-color: LightGreen;" text="4">
+                  <Button fx:id="quatreJoueurs" layoutX="541.0" layoutY="263.0" mnemonicParsing="false" style="-fx-background-color: LightGreen;" text="4">
                      <effect>
                         <DropShadow />
                      </effect>
                   </Button>
-                  <Button layoutX="498.0" layoutY="263.0" mnemonicParsing="false" style="-fx-background-color: LightCoral;" text="3">
+                  <Button fx:id="troisJoueurs" layoutX="498.0" layoutY="263.0" mnemonicParsing="false" style="-fx-background-color: LightCoral;" text="3">
                      <effect>
                         <DropShadow />
                      </effect>
